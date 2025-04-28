@@ -34,6 +34,13 @@ export default async function Home() {
             }}>
             Hello, {session?.user?.name}!
           </Typography>
+          <Typography
+            align="center"
+            sx={{
+              fontSize: "1.5vw"
+            }}>
+            Your email is {session?.user?.email}
+          </Typography>
         </>
       ) : (
         <SignIn />
