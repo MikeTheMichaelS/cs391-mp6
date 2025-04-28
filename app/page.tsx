@@ -45,7 +45,17 @@ export default async function Home() {
           <SignOut />
         </>
       ) : (
-        <SignIn />
+        <>
+          <Typography
+            align="center"
+            sx={{
+              fontSize: "1.5vw",
+              marginBottom: "20px",
+            }}>
+            Please sign in to continue
+          </Typography>
+          <SignIn />
+        </>
       )}
     </Box>
   );
