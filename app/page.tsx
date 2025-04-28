@@ -3,6 +3,7 @@ import SignIn from "@/components/SignInButton";
 import { auth } from "@/auth";
 import Box from "@mui/material/Box";
 import { Typography } from "@mui/material";
+import SignOut from "@/components/SignOutButton";
 
 
 export default async function Home() {
@@ -41,6 +42,7 @@ export default async function Home() {
             }}>
             Your email is {session?.user?.email}
           </Typography>
+          <SignOut />
         </>
       ) : (
         <SignIn />
